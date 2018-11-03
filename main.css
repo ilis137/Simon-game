@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+html body {
+  height: 100vh;
+  display: grid;
+}
+html body #main-container {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border: 20px solid #333333;
+  position: relative;
+  border-radius: 50%;
+}
+html body #main-container #upper {
+  display: flex;
+}
+html body #main-container #upper #green {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-right: 10px solid #333333;
+  border-bottom: 10px solid #333333;
+  background: green;
+  border-top-left-radius: 100%;
+}
+html body #main-container #upper #red {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-left: 10px solid #333333;
+  border-bottom: 10px solid #333333;
+  background: red;
+  border-top-right-radius: 100%;
+}
+html body #main-container #panel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  height: 250px;
+  width: 250px;
+  border: 10px solid #333333;
+  z-index: 10;
+  background: #ECE7EE;
+  border-radius: 50%;
+}
+html body #main-container #panel span {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: 1000;
+}
+html body #main-container #panel #controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html body #main-container #panel #controls #display {
+  display: relative;
+  width: 60px;
+  height: 30px;
+  border: 5px solid #333333;
+  border-radius: 5px;
+  background: #32050C;
+  color: #430710;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+html body #main-container #panel #controls #display span {
+  font-size: 15px;
+  position: absolute;
+  top: 130%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+}
+html body #main-container #panel #controls #start {
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #333333;
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  outline: none;
+}
+html body #main-container #panel #controls #start span {
+  font-size: 15px;
+  position: absolute;
+  top: 120%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+html body #main-container #panel #controls #strict {
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #333333;
+  width: 30px;
+  height: 30px;
+  background: red;
+  outline: none;
+}
+html body #main-container #panel #controls #strict span {
+  font-size: 15px;
+  position: absolute;
+  top: 120%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+html body #main-container #panel #switch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html body #main-container #panel #switch .outer {
+  width: 8vw;
+  height: 25px;
+  max-width: 77px;
+  min-width: 48px;
+  background-color: #444444;
+  color: #1f0052;
+  z-index: 2;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+html body #main-container #panel #switch .outer .inner {
+  background-color: #00aeff;
+  width: 35%;
+  height: 30px;
+  z-index: 5;
+}
+html body #main-container #panel #switch .outer-inactive {
+  justify-content: flex-start;
+}
+html body #main-container #panel #switch .outer-active {
+  justify-content: flex-end;
+}
+html body #main-container #panel #switch #on {
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+}
+html body #main-container #panel #switch #off {
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 17%;
+}
+html body #main-container #lower {
+  display: flex;
+}
+html body #main-container #lower #yellow {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-right: 10px solid #333333;
+  border-top: 10px solid #333333;
+  background: yellow;
+  background-clip: border-box;
+  border-bottom-left-radius: 100%;
+}
+html body #main-container #lower #blue {
+  box-sizing: border-box;
+  height: 200px;
+  width: 200px;
+  border-left: 10px solid #333333;
+  border-top: 10px solid #333333;
+  background: blue;
+  border-bottom-right-radius: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
