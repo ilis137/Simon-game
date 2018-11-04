@@ -18,23 +18,29 @@ html {
             border-radius: 50%;
             #upper {
                 display: flex;
-                #green {
+                #Green {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
                     border-right: 10px solid #333333;
                     border-bottom: 10px solid #333333;
-                    background: green;
+                    background: #00a74a;
                     border-top-left-radius: 100%;
                 }
-                #red {
+                #Red {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
                     border-left: 10px solid #333333;
                     border-bottom: 10px solid #333333;
-                    background: red;
+                    background: #9f0f17;
                     border-top-right-radius: 100%;
+                }
+                .highlightGreen {
+                    background: green;
+                }
+                .highlightRed {
+                    background: red;
                 }
             }
             #panel {
@@ -95,6 +101,7 @@ html {
                         height: 30px;
                         background: yellow;
                         outline: none;
+                        cursor: pointer;
                         span {
                             font-size: 15px;
                             position: absolute;
@@ -111,6 +118,7 @@ html {
                         height: 30px;
                         background: red;
                         outline: none;
+                        cursor: pointer;
                         span {
                             font-size: 15px;
                             position: absolute;
@@ -172,24 +180,30 @@ html {
             }
             #lower {
                 display: flex;
-                #yellow {
+                #Yellow {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
                     border-right: 10px solid #333333;
                     border-top: 10px solid #333333;
-                    background: yellow;
+                    background: #cca707;
                     background-clip: border-box;
                     border-bottom-left-radius: 100%;
                 }
-                #blue {
+                #Blue {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
                     border-left: 10px solid #333333;
                     border-top: 10px solid #333333;
-                    background: blue;
+                    background: #094a8f;
                     border-bottom-right-radius: 100%;
+                }
+                .highlightYellow {
+                    background: yellow;
+                }
+                .highlightBlue {
+                    background: blue;
                 }
             }
         }

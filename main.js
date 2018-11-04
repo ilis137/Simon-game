@@ -1,21 +1,99 @@
+var game = [];
+var user = [];
+var rand = "Green";
+var count = 0;
+var counter = 0;
+var userCount = 0;
+var n = 0;
+
 $(document).ready(function() {
     $('.outer').click(power)
-        //$('#start').click(StartGame)
+    $('#start').click(startGame)
 });
-let onoff = "off";
+
+let colors = ["Green", "Red", "Yellow", "Blue"]
 
 function power() {
 
-    if (onoff == "off") {
-        onoff = "on";
+    if ($('.outer').hasClass('outer-inactive')) {
+
         $('.outer').removeClass('outer-inactive');
         $('.outer').addClass('outer-active');
 
     } else {
-        //console.log("hi there");
-        onoff = "off"
-        $('.outer').removeClass('outer-active');
 
+
+        $('.outer').removeClass('outer-active');
+        $('#start').removeClass('game-active');
         $('.outer').addClass('outer-inactive');
     }
+}
+
+function startGame() {
+    n = 0;
+    game = [];
+    user = [];
+    count = 0;
+    counter = 0;
+    userCount = 0;
+    if ($('.outer').hasClass('outer-active')) {
+        $('#start').addClass('game-active');
+        runGame();
+    } else {
+        console.log("game is off")
+    }
+
+}
+
+function reset() {
+    $("#Green").removeClass("highlightGreen");
+    $("#Red").removeClass("highlightRed");
+    $("#Yellow").removeClass("highlightYellow");
+    $("#Blue").removeClass("highlightBlue");
+}
+
+function random() {
+    rand = colors[Math.floor(Math.random() * 4)]
+    game.push[rand];
+    console.log(rand);
+}
+//add css(background-color)
+function yellow() {
+    $("#Yellow").addClass("highlightYellow");
+}
+
+function red() {
+    $("#Red").addClass("highlightRed");
+}
+
+function blue() {
+    $("#Blue").addClass("highlightBlue");
+
+}
+
+function green() {
+    $("#Green").addClass("highlightGreen");
+}
+
+function simon() {
+    if (rand = "Green")
+        green();
+    if (rand = "Red")
+        red();
+    if (rand = "Yellow")
+        yellow();
+    if (rand = "Blue")
+        blue()
+}
+
+function runGame() {
+    var Machine = setInterval(function() {
+        reset()
+        random()
+        simon()
+
+        count++;
+    }, 750)
+
+
 }

@@ -22,23 +22,29 @@ html body #main-container {
 html body #main-container #upper {
   display: flex;
 }
-html body #main-container #upper #green {
+html body #main-container #upper #Green {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
   border-right: 10px solid #333333;
   border-bottom: 10px solid #333333;
-  background: green;
+  background: #00a74a;
   border-top-left-radius: 100%;
 }
-html body #main-container #upper #red {
+html body #main-container #upper #Red {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
   border-left: 10px solid #333333;
   border-bottom: 10px solid #333333;
-  background: red;
+  background: #9f0f17;
   border-top-right-radius: 100%;
+}
+html body #main-container #upper .highlightGreen {
+  background: green;
+}
+html body #main-container #upper .highlightRed {
+  background: red;
 }
 html body #main-container #panel {
   position: absolute;
@@ -100,6 +106,7 @@ html body #main-container #panel #controls #start {
   height: 30px;
   background: yellow;
   outline: none;
+  cursor: pointer;
 }
 html body #main-container #panel #controls #start span {
   font-size: 15px;
@@ -116,6 +123,7 @@ html body #main-container #panel #controls #strict {
   height: 30px;
   background: red;
   outline: none;
+  cursor: pointer;
 }
 html body #main-container #panel #controls #strict span {
   font-size: 15px;
@@ -174,24 +182,30 @@ html body #main-container #panel #switch #off {
 html body #main-container #lower {
   display: flex;
 }
-html body #main-container #lower #yellow {
+html body #main-container #lower #Yellow {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
   border-right: 10px solid #333333;
   border-top: 10px solid #333333;
-  background: yellow;
+  background: #cca707;
   background-clip: border-box;
   border-bottom-left-radius: 100%;
 }
-html body #main-container #lower #blue {
+html body #main-container #lower #Blue {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
   border-left: 10px solid #333333;
   border-top: 10px solid #333333;
-  background: blue;
+  background: #094a8f;
   border-bottom-right-radius: 100%;
+}
+html body #main-container #lower .highlightYellow {
+  background: yellow;
+}
+html body #main-container #lower .highlightBlue {
+  background: blue;
 }
 
 /*# sourceMappingURL=main.css.map */
