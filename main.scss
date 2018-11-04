@@ -18,7 +18,7 @@ html {
             border-radius: 50%;
             #upper {
                 display: flex;
-                #Green {
+                .Green {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
@@ -27,7 +27,7 @@ html {
                     background: #00a74a;
                     border-top-left-radius: 100%;
                 }
-                #Red {
+                .Red {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
@@ -180,7 +180,7 @@ html {
             }
             #lower {
                 display: flex;
-                #Yellow {
+                .Yellow {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
@@ -190,7 +190,7 @@ html {
                     background-clip: border-box;
                     border-bottom-left-radius: 100%;
                 }
-                #Blue {
+                .Blue {
                     box-sizing: border-box;
                     height: 200px;
                     width: 200px;
@@ -200,10 +200,10 @@ html {
                     border-bottom-right-radius: 100%;
                 }
                 .highlightYellow {
-                    background: yellow;
+                    background-color: yellow;
                 }
                 .highlightBlue {
-                    background: blue;
+                    background-color: blue;
                 }
             }
         }

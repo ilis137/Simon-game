@@ -59,37 +59,43 @@ function random() {
 }
 //add css(background-color)
 function yellow() {
+    reset()
     $("#Yellow").addClass("highlightYellow");
 }
 
 function red() {
+    reset()
     $("#Red").addClass("highlightRed");
 }
 
 function blue() {
+    reset()
     $("#Blue").addClass("highlightBlue");
 
 }
 
 function green() {
+    reset()
     $("#Green").addClass("highlightGreen");
 }
 
 function simon() {
-    if (rand = "Green")
+    if (rand == "Green")
         green();
-    if (rand = "Red")
+    if (rand == "Red")
         red();
-    if (rand = "Yellow")
+    if (rand == "Yellow")
         yellow();
-    if (rand = "Blue")
+    if (rand == "Blue")
         blue()
 }
 
 function runGame() {
     var Machine = setInterval(function() {
+
         reset()
         random()
+        console.log(rand)
         simon()
 
         count++;

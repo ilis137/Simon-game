@@ -22,7 +22,7 @@ html body #main-container {
 html body #main-container #upper {
   display: flex;
 }
-html body #main-container #upper #Green {
+html body #main-container #upper .Green {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
@@ -31,7 +31,7 @@ html body #main-container #upper #Green {
   background: #00a74a;
   border-top-left-radius: 100%;
 }
-html body #main-container #upper #Red {
+html body #main-container #upper .Red {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
@@ -182,7 +182,7 @@ html body #main-container #panel #switch #off {
 html body #main-container #lower {
   display: flex;
 }
-html body #main-container #lower #Yellow {
+html body #main-container #lower .Yellow {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
@@ -192,7 +192,7 @@ html body #main-container #lower #Yellow {
   background-clip: border-box;
   border-bottom-left-radius: 100%;
 }
-html body #main-container #lower #Blue {
+html body #main-container #lower .Blue {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
@@ -202,10 +202,10 @@ html body #main-container #lower #Blue {
   border-bottom-right-radius: 100%;
 }
 html body #main-container #lower .highlightYellow {
-  background: yellow;
+  background-color: yellow;
 }
 html body #main-container #lower .highlightBlue {
-  background: blue;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=main.css.map */
