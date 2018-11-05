@@ -29,6 +29,7 @@ html body #main-container #upper .Green {
   border-right: 10px solid #333333;
   border-bottom: 10px solid #333333;
   background: #00a74a;
+  cursor: pointer;
   border-top-left-radius: 100%;
 }
 html body #main-container #upper .Red {
@@ -39,11 +40,18 @@ html body #main-container #upper .Red {
   border-bottom: 10px solid #333333;
   background: #9f0f17;
   border-top-right-radius: 100%;
+  cursor: pointer;
 }
 html body #main-container #upper .highlightGreen {
   background: green;
 }
 html body #main-container #upper .highlightRed {
+  background: red;
+}
+html body #main-container #upper .winner {
+  background: yellowgreen;
+}
+html body #main-container #upper .loser {
   background: red;
 }
 html body #main-container #panel {
@@ -191,6 +199,7 @@ html body #main-container #lower .Yellow {
   background: #cca707;
   background-clip: border-box;
   border-bottom-left-radius: 100%;
+  cursor: pointer;
 }
 html body #main-container #lower .Blue {
   box-sizing: border-box;
@@ -200,12 +209,19 @@ html body #main-container #lower .Blue {
   border-top: 10px solid #333333;
   background: #094a8f;
   border-bottom-right-radius: 100%;
+  cursor: pointer;
 }
 html body #main-container #lower .highlightYellow {
   background-color: yellow;
 }
 html body #main-container #lower .highlightBlue {
   background-color: blue;
+}
+html body #main-container #lower .winner {
+  background: yellowgreen;
+}
+html body #main-container #lower .loser {
+  background: red;
 }
 
 /*# sourceMappingURL=main.css.map */

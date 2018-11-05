@@ -25,6 +25,7 @@ html {
                     border-right: 10px solid #333333;
                     border-bottom: 10px solid #333333;
                     background: #00a74a;
+                    cursor: pointer;
                     border-top-left-radius: 100%;
                 }
                 .Red {
@@ -35,12 +36,19 @@ html {
                     border-bottom: 10px solid #333333;
                     background: #9f0f17;
                     border-top-right-radius: 100%;
+                    cursor: pointer;
                 }
                 .highlightGreen {
                     background: green;
                 }
                 .highlightRed {
                     background: red;
+                }
+                .winner {
+                    background:yellowgreen;
+                }
+                .loser{
+                    background:red;
                 }
             }
             #panel {
@@ -189,6 +197,7 @@ html {
                     background: #cca707;
                     background-clip: border-box;
                     border-bottom-left-radius: 100%;
+                    cursor: pointer;
                 }
                 .Blue {
                     box-sizing: border-box;
@@ -198,12 +207,19 @@ html {
                     border-top: 10px solid #333333;
                     background: #094a8f;
                     border-bottom-right-radius: 100%;
+                    cursor: pointer;
                 }
                 .highlightYellow {
                     background-color: yellow;
                 }
                 .highlightBlue {
                     background-color: blue;
+                }
+                .winner {
+                    background:yellowgreen;
+                }
+                .loser{
+                    background:red;
                 }
             }
         }
