@@ -9,7 +9,9 @@ html {
 }
 html body {
   height: 100vh;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 html body #main-container {
   height: 400px;
@@ -43,10 +45,10 @@ html body #main-container #upper .Red {
   cursor: pointer;
 }
 html body #main-container #upper .highlightGreen {
-  background: green;
+  background: #35ef55;
 }
 html body #main-container #upper .highlightRed {
-  background: red;
+  background: #fd2333;
 }
 html body #main-container #upper .winner {
   background: yellowgreen;
@@ -99,12 +101,16 @@ html body #main-container #panel #controls #display {
   font-size: 30px;
   font-weight: 700;
 }
-html body #main-container #panel #controls #display span {
+html body #main-container #panel #controls span {
   font-size: 15px;
   position: absolute;
   top: 130%;
   left: 23%;
   transform: translate(-50%, -50%);
+  color: black;
+}
+html body #main-container #panel #controls #count {
+  color: black;
 }
 html body #main-container #panel #controls #start {
   border-radius: 50%;
@@ -212,16 +218,22 @@ html body #main-container #lower .Blue {
   cursor: pointer;
 }
 html body #main-container #lower .highlightYellow {
-  background-color: yellow;
+  background-color: #ffe640;
 }
 html body #main-container #lower .highlightBlue {
-  background-color: blue;
+  background-color: #1c8af4;
 }
 html body #main-container #lower .winner {
   background: yellowgreen;
 }
 html body #main-container #lower .loser {
   background: red;
+}
+
+@media (max-width: 450px) {
+  #main-container {
+    transform: scale(0.6);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,9 @@ html {
     height: 100vh;
     body {
         height: 100vh;
-        display: grid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         #main-container {
             height: 400px;
             width: 400px;
@@ -39,16 +41,18 @@ html {
                     cursor: pointer;
                 }
                 .highlightGreen {
-                    background: green;
+                    background: rgb(53, 239, 85);
+                    ;
                 }
                 .highlightRed {
-                    background: red;
+                    background: rgb(253, 35, 51);
+                    ;
                 }
                 .winner {
-                    background:yellowgreen;
+                    background: yellowgreen;
                 }
-                .loser{
-                    background:red;
+                .loser {
+                    background: red;
                 }
             }
             #panel {
@@ -93,13 +97,17 @@ html {
                         text-align: center;
                         font-size: 30px;
                         font-weight: 700;
-                        span {
-                            font-size: 15px;
-                            position: absolute;
-                            top: 130%;
-                            left: 23%;
-                            transform: translate(-50%, -50%);
-                        }
+                    }
+                    span {
+                        font-size: 15px;
+                        position: absolute;
+                        top: 130%;
+                        left: 23%;
+                        transform: translate(-50%, -50%);
+                        color: black;
+                    }
+                    #count {
+                        color: black;
                     }
                     #start {
                         border-radius: 50%;
@@ -210,18 +218,26 @@ html {
                     cursor: pointer;
                 }
                 .highlightYellow {
-                    background-color: yellow;
+                    background-color: rgb(255, 230, 64);
+                    ;
                 }
                 .highlightBlue {
-                    background-color: blue;
+                    background-color: rgb(28, 138, 244);
+                    ;
                 }
                 .winner {
-                    background:yellowgreen;
+                    background: yellowgreen;
                 }
-                .loser{
-                    background:red;
+                .loser {
+                    background: red;
                 }
             }
         }
+    }
+}
+
+@media(max-width: 450px) {
+    #main-container {
+        transform: scale(0.6)
     }
 }
